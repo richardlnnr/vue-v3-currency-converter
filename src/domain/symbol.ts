@@ -1,8 +1,8 @@
-import { IKeyValueStringToString } from "./key-values";
+import { KeyValueStringToString } from "./key-values";
 
-export type ISymbol = IKeyValueStringToString;
+export type SymbolType = KeyValueStringToString;
 
-export interface ISymbols {
+export interface Symbols {
   success: boolean;
-  symbols: ISymbol;
+  symbols: SymbolType;
 }

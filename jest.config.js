@@ -5,7 +5,13 @@ module.exports = {
   },
   testMatch: ["**/+(*.)+(spec).+(ts)?(x)"],
   collectCoverage: true,
-  collectCoverageFrom: ["<rootDir>/src/**/**/*.vue", "!**/node_modules/**"],
+  collectCoverageFrom: [
+    "<rootDir>/src/**/**/*.vue",
+    "<rootDir>/src/**/**/*.ts",
+    "!<rootDir>/src/**/**/main.ts",
+    "!<rootDir>/src/**/**/index.ts",
+    "!**/node_modules/**",
+  ],
   coverageThreshold: {
     global: {
       statements: 85,

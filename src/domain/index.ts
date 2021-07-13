@@ -1,3 +1,3 @@
 export * from "./key-values";
-export * from "./rate";
+export * from "./latest";
 export * from "./symbol";
