@@ -8,16 +8,27 @@ import { Latest, Symbols } from "@/domain";
 const sucessSymbolsResponse: Symbols = {
   success: true,
   symbols: {
-    EUR: "Euro",
-    KWD: "Kuwaiti Dinar",
-    BRL: "Brazilian Real",
-    USD: "United States Dollar",
+    EUR: {
+      description: "Euro",
+      code: "EUR",
+    },
+    KWD: {
+      description: "Kuwaiti Dinar",
+      code: "KWD",
+    },
+    BRL: {
+      description: "Brazilian Real",
+      code: "BRL",
+    },
+    USD: {
+      description: "United States Dollar",
+      code: "USD",
+    },
   },
 };
 
 const sucessLatestResponse: Latest = {
   success: true,
-  timestamp: 1626136923,
   base: "EUR",
   date: "2021-07-13",
   rates: { KWD: 0.356935, BRL: 6.140667, USD: 1.186739 },

@@ -1,6 +1,11 @@
-import { KeyValueStringToString } from "./key-values";
+import { KeyValue } from "./key-values";
 
-export type SymbolType = KeyValueStringToString;
+export interface SymbolDetail {
+  code: string;
+  description: string;
+}
+
+export type SymbolType = KeyValue<SymbolDetail>;
 
 export interface Symbols {
   success: boolean;
