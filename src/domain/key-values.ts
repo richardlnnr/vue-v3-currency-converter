@@ -1,7 +1,3 @@
-export interface KeyValueStringToString {
-  [key: string]: string;
-}
-
-export interface KeyValueStringToNumber {
-  [key: string]: number;
+export interface KeyValue<T> {
+  [key: string]: T;
 }
